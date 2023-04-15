@@ -1,0 +1,31 @@
+:root{
+    --noir: #000;
+    --blanc: #fff;
+}
+
+body{
+    overflow-y:hidden
+}
+header {
+
+    width: 100%;
+    
+    height: 100%;
+    
+    background-image: url("../img/img_arriere_plan/fond-debut.png");
+    
+    aspect-ratio: 16/9;
+    
+    background-size: cover;
+    
+    background-position: center;
+    
+    background-repeat: no-repeat;
+    
+    box-sizing: border-box;
+}
+
+h1{
+    padding: 10px;
+
+}
