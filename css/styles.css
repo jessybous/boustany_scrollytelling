@@ -4,28 +4,46 @@
 }
 
 body{
-    overflow-y:hidden
+    overflow-x:hidden;
+    margin:0;
 }
 header {
-
-    width: 100%;
-    
-    height: 100%;
-    
+    width: 100vw;
+    height: 100vw;
     background-image: url("../img/img_arriere_plan/fond-debut.png");
-    
     aspect-ratio: 16/9;
-    
     background-size: cover;
-    
     background-position: center;
-    
     background-repeat: no-repeat;
-    
     box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
 }
 
 h1{
     padding: 10px;
+    font-size: 10vw;  
+    font-family: 'Merienda', cursive; 
+}
 
+.credits{
+    font-size: 11px;
+    font-family: 'Caveat', cursive;
+    font-weight: bold;
+   margin-bottom: 20px;
+}
+
+.scrollicon{
+    width: 100px;
+}
+
+section{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+.chapitreun{
+    background-image: url("../img/img_arriere_plan/fond_ciel.png");
 }
