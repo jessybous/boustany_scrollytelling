@@ -9,7 +9,7 @@ body{
 }
 header {
     width: 100vw;
-    height: 100vw;
+    height: 100vh;
     background-image: url("../img/img_arriere_plan/fond-debut.png");
     aspect-ratio: 16/9;
     background-size: cover;
@@ -43,7 +43,103 @@ section{
     width: 100vw;
     height: 100vh;
     margin: 0;
+
 }
-.chapitreun{
+
+#chapitreun{
     background-image: url("../img/img_arriere_plan/fond_ciel.png");
+    aspect-ratio: 16/9;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
 }
+#chapitredeux{
+    background-image: url("../img/img_arriere_plan/fond_ciel.png");
+    aspect-ratio: 16/9;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+}
+#chapitretrois{
+    background-image: url("../img/img_arriere_plan/fond-noir.png");
+    aspect-ratio: 16/9;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+}
+#chapitrequatre{
+    background-image: url("../img/img_arriere_plan/fond-eau.png");
+    aspect-ratio: 16/9;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+}
+#chapitrecinq{
+    background-image: url("../img/img_arriere_plan/fond_ciel.png");
+    aspect-ratio: 16/9;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+}
+#chapitresix{
+    background-image: url("../img/img_arriere_plan/fond_ciel.png");
+    aspect-ratio: 16/9;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.spritesheet{
+    
+    background-size:6000%;
+   
+    height: 632px;
+
+    animation-name: marche;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(60);
+    background-image: url(../img/img_personnages/spritesheet_chien.png);
+}
+
+@keyframes marche {
+    from { background-position: 0 0; }
+    to { background-position: 0 -6000%; } 
+
+  }
