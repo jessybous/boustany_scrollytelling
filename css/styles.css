@@ -126,16 +126,20 @@ section{
 }
 
 .spritesheet{
-    
-    background-size:6000%;
+    height:500vh;
    
-    height: 632px;
+}
 
+.ougabouga{
+    height: 630px;
+    width: 100vw;
+    background-image: url(../img/img_personnages/spritesheet_chien.png);
     animation-name: marche;
     animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-timing-function: steps(60);
-    background-image: url(../img/img_personnages/spritesheet_chien.png);
+    
+  
 }
 
 @keyframes marche {
