@@ -131,7 +131,7 @@ section {
 
 .ougabouga {
     aspect-ratio: 1122/632;
-    width: 50vw;
+    width: 100vw;
     border: 1px solid#000;
     background-image: url(../img/img_personnages/spritesheet_chien.png);
     animation-name: marche;
@@ -139,6 +139,7 @@ section {
     animation-iteration-count: infinite;
     animation-timing-function: steps(60);
     background-size: 100% 6000%;
+    animation-play-state: paused;
 }
 
 @keyframes marche {
@@ -148,4 +149,32 @@ section {
     to {
         background-position: 0 -6000%;
     }
+}
+
+body.is-scrolling{
+    animation-play-state: running;
+}
+
+.bougou{
+    background-image: url(../img/img_elements_visuels/spritesheet-bulle.png);
+    width: 100vw;
+    aspect-ratio: 561/316;
+    animation-name: bubbles;
+    background-size: 5600% 100%;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(56);
+    margin: 0 auto;
+    animation-play-state: paused;
+    border: 1px solid#000;
+}
+
+@keyframes bubbles {
+    from{
+        background-position: 0 0 ;
+    } 
+    to{
+        background-position: -5600% 0;
+    }
+    
 }
