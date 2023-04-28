@@ -58,6 +58,8 @@ section {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    position: relative;
+height: 100vh;
 }
 
 #chapitredeux {
@@ -71,6 +73,7 @@ section {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    position: relative;
 }
 
 #chapitretrois {
@@ -84,6 +87,7 @@ section {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    position: relative;
 }
 
 #chapitrequatre {
@@ -97,6 +101,7 @@ section {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    position: relative;
 }
 
 #chapitrecinq {
@@ -110,6 +115,7 @@ section {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    position: relative;
 }
 
 #chapitresix {
@@ -122,6 +128,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
     flex-direction: column;
 }
 
@@ -166,7 +173,7 @@ body.is-scrolling{
     animation-timing-function: steps(56);
     margin: 0 auto;
     animation-play-state: paused;
-    border: 1px solid#000;
+
 }
 
 @keyframes bubbles {
@@ -177,4 +184,61 @@ body.is-scrolling{
         background-position: -5600% 0;
     }
     
+}
+
+.gazon{
+position: absolute;
+    width: 100vw;
+    bottom: 0;
+    z-index: 2;
+    height: 50vh;
+    object-fit: cover;
+    
+}
+
+.nuages{
+    width: 100vw;
+    position: absolute;
+}
+.terre{
+    width: 100vw;
+    position: absolute;
+    bottom: 0px;
+    object-fit: cover;
+    height: 50vh;
+
+}
+
+.tombe{
+ width: 100vw;
+ position: absolute;
+ height: 100vh;
+ object-fit: cover;
+ bottom: -150px;
+}
+
+.chien{
+width: 1122px;
+position: absolute;
+bottom: 0px;
+object-fit: cover;
+height: 632px;
+aspect-ratio: 1122/632;
+}
+
+.trou{
+    width: 100vw;
+    position: absolute;
+    bottom: 0px;
+    object-fit: cover;
+    height: 100vh;
+}
+
+.chien-tombe{
+    width: 1122px;
+position: absolute;
+bottom: 125px;
+object-fit: cover;
+height: 632px;
+aspect-ratio: 1122/632;
 }
