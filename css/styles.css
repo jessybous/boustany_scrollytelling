@@ -242,3 +242,154 @@ object-fit: cover;
 height: 632px;
 aspect-ratio: 1122/632;
 }
+
+.grotte-layer-1{
+    width: 100vw;
+    position: absolute;
+    bottom: 0px;
+    object-fit: cover;
+    height: 100vh;
+    z-index: 2;
+}
+.grotte-layer-2{
+    width: 100vw;
+    position: absolute;
+    bottom: 0px;
+    object-fit: cover;
+    height: 100vh;
+    z-index: 1;
+}
+.grotte-layer-3{
+    width: 100vw;
+    position: absolute;
+    bottom: 0px;
+    object-fit: cover;
+    height: 100vh;
+    z-index: 3;
+}
+.water{
+    width: 100vw;
+    position: absolute;
+    bottom: 0px;
+    object-fit: cover;
+    height: 100vh;
+    z-index: 3;
+}
+
+.chien-3{
+    width: 516px;
+    position: absolute;
+    bottom: 100px;
+    object-fit: cover;
+    height: 316px;
+    aspect-ratio: 1122/632;
+    z-index: 3;
+}
+
+.bulles{
+    width: 100vw;
+    position: absolute;
+    bottom: 0px;
+    object-fit: cover;
+    height: 100vh;
+    z-index: 1; 
+}
+
+.fog-water{
+    width: 100vw;
+    position: absolute;
+    bottom: 0px;
+    object-fit: cover;
+    height: 100vh;
+    z-index: 1;   
+}
+
+.dog-water{
+    width: 100vw;
+    position: absolute;
+    bottom: 0px;
+    object-fit: cover;
+    height: 100vh;
+    aspect-ratio: 1122/632;
+
+}
+
+.solmontagne{
+    width: 100vw;
+    position: absolute;
+    bottom: 0px;
+    object-fit: cover;
+    height: 100vh;   
+}
+
+.watermountain{
+    width: 100vw;
+    position: absolute;
+    bottom: 0px;
+    object-fit: cover;
+    height: 100vh;   
+}
+
+.roche-montagne{
+    width: 100vw;
+    position: absolute;
+    bottom: 0px;
+    object-fit: cover;
+    height: 100vh;  
+     
+}
+.montagne{
+    width: 100vw;
+    position: absolute;
+    bottom: 0px;
+    object-fit: cover;
+    height: 100vh;   
+}
+.chutte{
+    width: 100vw;
+    position: absolute;
+    bottom: 0px;
+    object-fit: cover;
+    height: 100vh;   
+    z-index: 2;
+}
+
+.gazonmontagne{
+    width: 100vw;
+    position: absolute;
+    bottom: 0px;
+    object-fit: cover;
+    height: 100vh;  
+    z-index: 1; 
+}
+
+.chienfin{
+    width: 516px;
+    position: absolute;
+    bottom: 100px;
+    object-fit: cover;
+    height: 316px;
+    aspect-ratio: 1122/632;
+    z-index: 3;
+    left: 0;
+}
+
+.text-chapitre{
+   position: absolute; 
+   top: 100px;
+   font-size: 45px;
+   z-index: 5;
+   font-family: 'Caveat', cursive;
+   text-align: center;
+}
+
+.textdeux{
+    position: absolute; 
+    top: 100px;
+    font-size: 45px;
+    z-index: 5;
+    font-family: 'Caveat', cursive;
+    text-align: center;
+    color: var(--blanc);
+
+}
