@@ -23,7 +23,7 @@ window.addEventListener("scroll", (delay)=>{
 
 
 let chapitredeux = gsap.timeline();
-chapitredeux.fromTo(".chien-tombe", { x: "-100vh"}, {y: "100vh", duration: 4,repeat:-1 })
+chapitredeux.fromTo(".chien-tombe", { x: "-35vw", y: "-80vh"}, {y: "100vh", duration: 4,repeat:-1 })
 
 let chapitretrois = gsap.timeline();
 chapitretrois.fromTo(".chien-3", {x:"-100vw"}, {x: "100vw", duration: 6})
