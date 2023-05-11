@@ -333,11 +333,11 @@ border: 1px solid greenyellow;
 }
 
 .dog-water{
-    width: 100vw;
+    width:1122px;
     position: absolute;
     bottom: 0px;
     object-fit: cover;
-    height: 100vh;
+   
     aspect-ratio: 1122/632;
     border: 1px solid greenyellow;
 }
