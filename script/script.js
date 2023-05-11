@@ -1,6 +1,15 @@
 
 gsap.registerPlugin(ScrollTrigger);
 
+let hauteurTotaleDuDocument = document.body.scrollHeight;
+
+let parallax1 = document.querySelector("#parallax-bg-1");
+let parallax1data = parallax1.getAttribute("data-vitesse");
+let parallax2 = document.querySelector("#parallax-bg-2");
+let parallax2data = parallax1.getAttribute("data-vitesse");
+let parallax3 = document.querySelector("#parallax-bg-3");
+let parallax3data = parallax1.getAttribute("data-vitesse");
+
 const play = document.querySelector('.scrollicon');
 
   gsap.from('.scrollicon', { 
@@ -28,7 +37,7 @@ window.addEventListener("scroll", (delay)=>{
 /* Animation Chapitre 1 */
 let chapitreun = gsap.timeline({
   scrollTrigger: {
-
+    pin: true,
     markers: true,
     start: "center center",
     end: "bottom top",
@@ -42,6 +51,7 @@ chapitreun.fromTo(".chien_5", {x:"-100vw"}, {x:"100vw",  duration: 7})
 /* Animation Chapitre 2 */
 let chapitredeux = gsap.timeline({
   scrollTrigger: {
+    pin: true,
     markers: true,
     start: "center center",
     end: "bottom top",
@@ -55,7 +65,7 @@ chapitredeux.fromTo(".chien-tombe", { x: "-35vw", y: "-50vh"}, {y: "100vh", dura
 /* Animation Chapitre 3 */
 let chapitretrois = gsap.timeline({
   scrollTrigger: {
-
+    pin: true,
     markers: true,
     start: "top center",
     end: "bottom top",
@@ -68,7 +78,7 @@ chapitretrois.fromTo(".chien-3", {x:"-100vw"}, {x: "100vw", duration: 6})
 /* Animation Chapitre 4 */
 let chapitrequatre = gsap.timeline({
   scrollTrigger: {
-    pinSpacing:true,
+
     markers: true,
     start: "top center",
     end: "bottom top",
@@ -81,7 +91,6 @@ chapitrequatre.fromTo(".dog-water", {x:"-100vw", y: "10vh"}, {x:"100vw", y:"-100
 /* Animation Chapitre 5 */
 let chapitrecinq = gsap.timeline({
   scrollTrigger: {
-
     markers: true,
     start: "top center",
     end: "bottom top",
@@ -94,7 +103,6 @@ chapitrecinq.fromTo(".chien", {x:"-100vw"}, {x:"100vw",  duration: 7})
 /* Animation Chapitre 6 */
 let chapitresix = gsap.timeline({
   scrollTrigger: {
-
     markers: true,
     start: "center center",
     end: "bottom top",
@@ -104,3 +112,33 @@ let chapitresix = gsap.timeline({
 });
 chapitresix.fromTo(".chienfin", {x:"-100vh"}, {x:"10vw",  duration: 3})
 .to(".chienfin", {y: "-40vh", rotation:-65, duration: 3})
+
+
+gsap.to("#parallax-bg-1", {
+  scrollTrigger: {
+    scrub: true,
+    markers: true
+  },
+  x: hauteurTotaleDuDocument*-0.25,
+  ease: "none"
+})
+
+gsap.to("#parallax-bg-2", {
+  scrollTrigger: {
+    scrub: true,
+    markers: true
+  },
+  x: hauteurTotaleDuDocument*-0.40,
+  ease: "none"
+})
+
+gsap.to("#parallax-bg-3", {
+  scrollTrigger: {
+    scrub: true,
+    markers: true
+  },
+  x: hauteurTotaleDuDocument*-0.75,
+  ease: "none"
+})
+
+gsap.from("#sparkles", { drawSVG: "0 0", duration: 10 })

@@ -1,4 +1,4 @@
-/*https://tim-montmorency.com/timdoc/582-424MO/projet-scrollytelling/p2-2a/*/
+/*https://tim-montmorency.com/timdoc/582-424MO/projet-scrollytelling/p2-3a/*/
 :root {
     --noir: #000;
     --blanc: #fff;
@@ -60,7 +60,6 @@ section {
     flex-direction: column;
     position: relative;
  height: 100vh;
- border: 1px solid red;
 }
 
 #chapitredeux {
@@ -75,7 +74,6 @@ section {
     align-items: center;
     flex-direction: column;
     position: relative;
-    border: 1px solid red;
 }
 
 #chapitretrois {
@@ -90,7 +88,6 @@ section {
     align-items: center;
     flex-direction: column;
     position: relative;
-    border: 1px solid red;
 }
 
 #chapitrequatre {
@@ -105,7 +102,6 @@ section {
     align-items: center;
     flex-direction: column;
     position: relative;
-    border: 1px solid red;
 }
 
 #chapitrecinq {
@@ -120,7 +116,6 @@ section {
     align-items: center;
     flex-direction: column;
     position: relative;
-    border: 1px solid red;
 }
 
 #chapitresix {
@@ -135,7 +130,6 @@ section {
     align-items: center;
     position: relative;
     flex-direction: column;
-    border: 1px solid red;
 }
 
 .spritesheet {
@@ -152,21 +146,6 @@ section {
     animation-timing-function: steps(60);
     background-size: 100% 6000%;
     animation-play-state: paused;
-    border: 1px solid greenyellow;
-
-}
-
-.chien_5 {
-    aspect-ratio: 1122/632;
-    width: 100vw;
-    background-image: url(../img/img_personnages/spritesheet_chien.png);
-    animation-name: marche;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-timing-function: steps(60);
-    background-size: 100% 6000%;
-    animation-play-state: paused;
-    border: 1px solid greenyellow;
 
 }
 
@@ -180,10 +159,6 @@ section {
 }
 
 .is-scrolling .chien{
-    animation-play-state: running;
-}
-
-.is-scrolling .chien_5{
     animation-play-state: running;
 }
 
@@ -202,7 +177,7 @@ section {
     bottom: 0px;
     height: 100vh;
     z-index: 1; 
-    border: 1px solid greenyellow;
+
 }
 
 .is-scrolling .bougou{
@@ -256,17 +231,8 @@ position: absolute;
 bottom: 0px;
 object-fit: cover;
 height: 632px;
-border: 1px solid greenyellow;
-}
 
-.chien_5{
-    width: 1122px;
-    position: absolute;
-    bottom: 0px;
-    object-fit: cover;
-    height: 632px;
-    border: 1px solid greenyellow;
-    }
+}
 
 .trou{
     width: 100vw;
@@ -284,10 +250,10 @@ object-fit: cover;
 height: 632px;
 aspect-ratio: 1122/632;
 left: 65vw;
-border: 1px solid greenyellow;
 }
 
 .grotte-layer-1{
+    background-attachment: scroll;
     width: 100vw;
     position: absolute;
     bottom: 0px;
@@ -296,6 +262,7 @@ border: 1px solid greenyellow;
     z-index: 2;
 }
 .grotte-layer-2{
+    background-attachment: scroll;
     width: 100vw;
     position: absolute;
     bottom: 0px;
@@ -304,6 +271,7 @@ border: 1px solid greenyellow;
     z-index: 1;
 }
 .grotte-layer-3{
+    background-attachment: scroll;
     width: 100vw;
     position: absolute;
     bottom: 0px;
@@ -333,13 +301,13 @@ border: 1px solid greenyellow;
 }
 
 .dog-water{
-    width:1122px;
+    width: 100vw;
     position: absolute;
     bottom: 0px;
     object-fit: cover;
-   
+    height: 100vh;
     aspect-ratio: 1122/632;
-    border: 1px solid greenyellow;
+
 }
 
 .solmontagne{
@@ -347,9 +315,9 @@ border: 1px solid greenyellow;
     position: absolute;
     bottom: 0px;
     object-fit: cover;
-    height: 100vh;   
+    height: 100vh; 
+    z-index: 3;  
 }
-
 .watermountain{
     width: 100vw;
     position: absolute;
@@ -394,15 +362,13 @@ border: 1px solid greenyellow;
 }
 
 .chienfin{
-    width: 516px;
+    width: 1122px;
     position: absolute;
-    bottom: 100px;
+    bottom: 25vh;
     object-fit: cover;
-    height: 316px;
     aspect-ratio: 1122/632;
-    z-index: 2;
+    z-index: 1;
     left: 0;
-    border: 1px solid greenyellow;
 }
 
 .text-chapitre{
@@ -437,11 +403,122 @@ border: 1px solid greenyellow;
     background-size: 100% 6000%;
     animation-play-state: paused;
     z-index: 3;
-    bottom: 0;
+    bottom: 40vh;
     position: absolute;
-    border: 1px solid greenyellow;
 }
 
 .is-scrolling .chien-3{
     animation-play-state: running;
 }
+
+.chien_5{
+aspect-ratio: 1122/632;
+width: 561px;
+background-image: url(../img/img_personnages/spritesheet_chien.png);
+animation-name: marche;
+animation-duration: 1s;
+animation-iteration-count: infinite;
+animation-timing-function: steps(60);
+background-size: 100% 6000%;
+animation-play-state: paused;
+z-index: 3;
+bottom: 30vh;
+position: absolute;
+}
+
+div#parallax-bg-2 div {
+    background: url("../img/img_elements_visuels/IMG_0583.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+    border: 1px solid green;
+    top:-50vh;
+    left: -50vw;
+}
+
+  div#parallax-bg-1 div {
+    background: url("../img/img_elements_visuels/IMG_0584.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+    border: 1px solid green;
+    top:-100vh;
+    left: -100vw;
+  }
+  div#bg-1-1 {
+    background: url("../img/img_elements_visuels/IMG_0584.png");
+    width: 100vw;
+    height: 100vh;
+  }
+
+  div#parallax-bg-3 div {
+    background-repeat: no-repeat;
+    position: absolute;  
+    display: block;
+    overflow: hidden;
+    background-size: cover;
+    border: 1px solid red
+  }
+  
+  div#bg-3-1 {
+    background: url("../img/img_elements_visuels/IMG_0585.png");
+    width: 100vw;
+    height: 100vh;
+  
+  }
+/*
+
+div#parallax-bg-1 div {
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    position: absolute;
+    top:0vh;
+    height: 100vh;
+    z-index: 4;
+    background-position: 0% 50%;
+    left:0vw;
+    position: fixed;
+z-index: 1;
+    border: 1px solid red
+}
+
+div#grotte-layer-1{
+    background-image: url(../img/img_elements_visuels/grotte-layer-1.png);
+    background-attachment: scroll;
+    width: 100vw;
+    position: absolute;
+    bottom: 0px;
+    background-size: cover;
+    height: 100vh;
+    z-index: 4;
+    background-position: 0% 50%;
+    left: 0;
+    position: fixed;
+    z-index: 100;
+}
+
+
+div#grotte-layer-2{
+    background-image: url(../img/img_elements_visuels/grotte-layer-2.png);
+    background-attachment: scroll;
+    width: 100vw;
+    position: absolute;
+    bottom: 0px;
+    background-size: cover;
+    height: 100vh;
+
+    background-position: 0% 50%;
+    left: 100vw;
+    position: fixed;
+
+}*/
