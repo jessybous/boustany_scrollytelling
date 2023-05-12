@@ -117,6 +117,7 @@ section {
     align-items: center;
     flex-direction: column;
     position: relative;
+    z-index: 1000;
 }
 
 #chapitresix {
@@ -132,7 +133,10 @@ section {
     position: relative;
     flex-direction: column;
 }
-
+#skull {
+    visibility: hidden;
+  }
+  
 .spritesheet {
     height: 500vh;
 }
@@ -485,6 +489,7 @@ div#parallax-bg-2 div {
 #plume{
     width: 10vw;
     position: absolute;
+    z-index: 100;
 }
 
 ul.technique-gsap{
@@ -506,4 +511,8 @@ ul.technique-gsap{
 
 ul.technique-gsap li{
     margin: 5px 0;
+}
+
+.morph{
+    z-index:   100;
 }

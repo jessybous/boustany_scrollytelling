@@ -1,6 +1,7 @@
 
 gsap.registerPlugin(ScrollTrigger);
-
+gsap.registerPlugin(MotionPathPlugin);
+//gsap.registerPlugin(MorphSVGPlugin);
 
 let hauteurTotaleDuDocument = document.body.scrollHeight;
 
@@ -49,6 +50,49 @@ let chapitreun = gsap.timeline({
 chapitreun.fromTo(".chien_5", {x:"-100vw"}, {x:"100vw",  duration: 7})
 
 
+/*parallax nuages */
+
+gsap.to("#parallax-bg-1", {
+  scrollTrigger: {
+    scrub: true,
+    markers: true
+  },
+  x: hauteurTotaleDuDocument*-0.25,
+  ease: "none"
+})
+
+gsap.to("#parallax-bg-2", {
+  scrollTrigger: {
+    scrub: true,
+    markers: true
+  },
+  x: hauteurTotaleDuDocument*-0.40,
+  ease: "none"
+})
+
+gsap.to("#parallax-bg-3", {
+  scrollTrigger: {
+    scrub: true,
+    markers: true
+  },
+  x: hauteurTotaleDuDocument*-0.75,
+  ease: "none"
+})
+
+
+/* drawsvg 
+//gsap.registerPlugin(DrawSVGPlugin);
+gsap.from("#path", { drawSVG: "0 0", duration: 5})
+gsap.from("#eyeone", { drawSVG: "0 0", duration: 2})
+gsap.from("#eyetwo", { drawSVG: "0 0", duration: 4})
+gsap.from("#mouthone", { drawSVG: "0 0", duration: 6})
+gsap.from("#mouthtwo", { drawSVG: "0 0", duration: 7})
+
+
+let anim = gsap.to("#starone", {
+  morphSVG: "#skull"
+});
+*/
 /* Animation Chapitre 2 */
 let chapitredeux = gsap.timeline({
   scrollTrigger: {
@@ -113,57 +157,21 @@ let chapitresix = gsap.timeline({
   }
 });
 chapitresix.fromTo(".chienfin", {x:"-100vh"}, {x:"10vw",  duration: 3})
-.to(".chienfin", {y: "-40vh", rotation:-65, duration: 3})
-
-/*parallax nuages */
-
-gsap.to("#parallax-bg-1", {
-  scrollTrigger: {
-    scrub: true,
-    markers: true
-  },
-  x: hauteurTotaleDuDocument*-0.25,
-  ease: "none"
-})
-
-gsap.to("#parallax-bg-2", {
-  scrollTrigger: {
-    scrub: true,
-    markers: true
-  },
-  x: hauteurTotaleDuDocument*-0.40,
-  ease: "none"
-})
-
-gsap.to("#parallax-bg-3", {
-  scrollTrigger: {
-    scrub: true,
-    markers: true
-  },
-  x: hauteurTotaleDuDocument*-0.75,
-  ease: "none"
-})
-
-
-/* drawsvg */
-gsap.registerPlugin(DrawSVGPlugin);
-gsap.from("#path", { drawSVG: "0 0", duration: 5})
-gsap.from("#eyeone", { drawSVG: "0 0", duration: 2})
-gsap.from("#eyetwo", { drawSVG: "0 0", duration: 4})
-gsap.from("#mouthone", { drawSVG: "0 0", duration: 6})
-gsap.from("#mouthtwo", { drawSVG: "0 0", duration: 7})
-
-gsap.registerPlugin(MotionPathPlugin);
+.to(".chienfin", {y: "-100vh", rotation:-65, scale: 0,duration: 3})
 
 let animation = gsap.to("#plume", {
   motionPath: {
-    align: "#Calque_2",
-    path: "#Calque_2",
-    autoRotate: true,
+    align: "#path-2",
+    path: "#path-2",
+    start:0,
     end: 0.55,
-    alignOrigin: [0.5, 1]  
   },
   duration: 10,
   repeat: -1,
+  scale:2,
 })
+
+
+
+
 
