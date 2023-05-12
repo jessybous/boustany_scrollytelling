@@ -4,18 +4,31 @@
 
 ## Problème 1
 
-### Tailles 
-#### Actions concrète pour résoudre le problème
-Réduire les tailles des images
+### Nom du problème
+il n'y a pas de meta description
+### Actions concrète pour résoudre le problème
+ajouter un meta description
+
+### Résultat
+
 
 ## Problème 2
 
-### L'élément <html> n'a pas d'attribut [lang]
-#### Actions concrète pour résoudre le problème
-ajouter l'attribut lang
+### Nom du problène
+Il manque l'attribut lang au html
+### Actions concrète pour résoudre le problème
+ajouter l'attribut lang au html
+
+### Résultat
+Étant donner que j'avais déjà lang, je n'ai rien changer
 
 ## Problème 3
 
-### Les erreurs de navigateur ont été enregistrées dans la console
+### Nom du problème
+Les erreurs de la console n'ont pas été corriger
 #### Actions concrète pour résoudre le problème
-Résoudre les erreurs
+Résoudre les erreurs dans la console
+
+
+### Résultat
+Il n'y avait pas d'erreurs dans la console dès le début, donc je n'ai rien changer.
