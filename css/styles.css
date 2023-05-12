@@ -12,7 +12,7 @@ body {
 header {
     width: 100vw;
     height: 100vh;
-    background-image: url("../img/img_arriere_plan/fond-debut.png");
+    background-image: url("../img/img_arriere_plan/fond-debut.webp");
     aspect-ratio: 16/9;
     background-size: cover;
     background-position: center;
@@ -49,7 +49,7 @@ section {
 }
 
 #chapitreun {
-    background-image: url("../img/img_arriere_plan/fond_ciel.png");
+    background-image: url("../img/img_arriere_plan/fond_ciel.webp");
     aspect-ratio: 16/9;
     background-size: cover;
     background-position: center;
@@ -64,7 +64,7 @@ section {
 }
 
 #chapitredeux {
-    background-image: url("../img/img_arriere_plan/fond_ciel.png");
+    background-image: url("../img/img_arriere_plan/fond_ciel.webp");
     aspect-ratio: 16/9;
     background-size: cover;
     background-position: center;
@@ -78,7 +78,7 @@ section {
 }
 
 #chapitretrois {
-    background-image: url("../img/img_arriere_plan/fond-noir.png");
+    background-image: url("../img/img_arriere_plan/fond-noir.webp");
     aspect-ratio: 16/9;
     background-size: cover;
     background-position: center;
@@ -92,7 +92,7 @@ section {
 }
 
 #chapitrequatre {
-    background-image: url("../img/img_arriere_plan/fond-eau.png");
+    background-image: url("../img/img_arriere_plan/fond-eau.webp");
     aspect-ratio: 16/9;
     background-size: cover;
     background-position: center;
@@ -106,7 +106,7 @@ section {
 }
 
 #chapitrecinq {
-    background-image: url("../img/img_arriere_plan/fond_ciel.png");
+    background-image: url("../img/img_arriere_plan/fond_ciel.webp");
     aspect-ratio: 16/9;
     background-size: cover;
     background-position: center;
@@ -121,7 +121,7 @@ section {
 }
 
 #chapitresix {
-    background-image: url("../img/img_arriere_plan/fond_ciel.png");
+    background-image: url("../img/img_arriere_plan/fond_ciel.webp");
     aspect-ratio: 16/9;
     background-size: cover;
     background-position: center;
