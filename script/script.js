@@ -1,6 +1,7 @@
 
 gsap.registerPlugin(ScrollTrigger);
 
+
 let hauteurTotaleDuDocument = document.body.scrollHeight;
 
 let parallax1 = document.querySelector("#parallax-bg-1");
@@ -52,10 +53,11 @@ chapitreun.fromTo(".chien_5", {x:"-100vw"}, {x:"100vw",  duration: 7})
 let chapitredeux = gsap.timeline({
   scrollTrigger: {
     pin: true,
+
     markers: true,
     start: "center center",
     end: "bottom top",
-    toggleActions: "restart complete reset",
+    toggleActions: "restart complete reverse reset",
     trigger: ".chien-tombe"
   }
 })
@@ -113,6 +115,7 @@ let chapitresix = gsap.timeline({
 chapitresix.fromTo(".chienfin", {x:"-100vh"}, {x:"10vw",  duration: 3})
 .to(".chienfin", {y: "-40vh", rotation:-65, duration: 3})
 
+/*parallax nuages */
 
 gsap.to("#parallax-bg-1", {
   scrollTrigger: {
@@ -141,4 +144,26 @@ gsap.to("#parallax-bg-3", {
   ease: "none"
 })
 
-gsap.from("#sparkles", { drawSVG: "0 0", duration: 10 })
+
+/* drawsvg */
+gsap.registerPlugin(DrawSVGPlugin);
+gsap.from("#path", { drawSVG: "0 0", duration: 5})
+gsap.from("#eyeone", { drawSVG: "0 0", duration: 2})
+gsap.from("#eyetwo", { drawSVG: "0 0", duration: 4})
+gsap.from("#mouthone", { drawSVG: "0 0", duration: 6})
+gsap.from("#mouthtwo", { drawSVG: "0 0", duration: 7})
+
+gsap.registerPlugin(MotionPathPlugin);
+
+let animation = gsap.to("#plume", {
+  motionPath: {
+    align: "#Calque_2",
+    path: "#Calque_2",
+    autoRotate: true,
+    end: 0.55,
+    alignOrigin: [0.5, 1]  
+  },
+  duration: 10,
+  repeat: -1,
+})
+

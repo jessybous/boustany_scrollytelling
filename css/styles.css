@@ -22,6 +22,7 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+
 }
 
 h1 {
@@ -427,7 +428,7 @@ position: absolute;
 }
 
 div#parallax-bg-2 div {
-    background: url("../img/img_elements_visuels/IMG_0583.png");
+    background: url("../img/img_elements_visuels/nuage1.png");
     background-repeat: no-repeat;
     position: absolute;
     display: block;
@@ -441,7 +442,7 @@ div#parallax-bg-2 div {
 }
 
   div#parallax-bg-1 div {
-    background: url("../img/img_elements_visuels/IMG_0584.png");
+    background: url("../img/img_elements_visuels/nuage2.png");
     background-repeat: no-repeat;
     position: absolute;
     display: block;
@@ -454,7 +455,7 @@ div#parallax-bg-2 div {
     left: -100vw;
   }
   div#bg-1-1 {
-    background: url("../img/img_elements_visuels/IMG_0584.png");
+    background: url("../img/img_elements_visuels/nuage3.png");
     width: 100vw;
     height: 100vh;
   }
@@ -474,51 +475,35 @@ div#parallax-bg-2 div {
     height: 100vh;
   
   }
-/*
 
-div#parallax-bg-1 div {
-
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    position: absolute;
-    top:0vh;
-    height: 100vh;
-    z-index: 4;
-    background-position: 0% 50%;
-    left:0vw;
-    position: fixed;
-z-index: 1;
-    border: 1px solid red
-}
-
-div#grotte-layer-1{
-    background-image: url(../img/img_elements_visuels/grotte-layer-1.png);
-    background-attachment: scroll;
-    width: 100vw;
-    position: absolute;
-    bottom: 0px;
-    background-size: cover;
-    height: 100vh;
-    z-index: 4;
-    background-position: 0% 50%;
-    left: 0;
-    position: fixed;
+  #sparkles{
     z-index: 100;
+    position: absolute;
+    top: 25vh;
 }
 
-
-div#grotte-layer-2{
-    background-image: url(../img/img_elements_visuels/grotte-layer-2.png);
-    background-attachment: scroll;
-    width: 100vw;
+#plume{
+    width: 10vw;
     position: absolute;
-    bottom: 0px;
-    background-size: cover;
-    height: 100vh;
+}
 
-    background-position: 0% 50%;
-    left: 100vw;
-    position: fixed;
+ul.technique-gsap{
+    background: rgba(0,0,0,0.3);
+    color: white;
+    font-size: 10px;
+    font-family: monospace;
+    font-weight: 400;
+    width: auto;
+    display: inline-block;
+    padding: 10px 20px 12px 20px;
+    margin: 0;
+    max-width: 300px;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+}
 
-}*/
+ul.technique-gsap li{
+    margin: 5px 0;
+}

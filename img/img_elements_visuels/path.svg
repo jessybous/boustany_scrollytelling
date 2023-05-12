@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="motionpaths" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 360.45 1088.95">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        isolation: isolate;
+      }
+    </style>
+  </defs>
+  <g id="path">
+    <path class="cls-1" d="m48.64.45c51.35,24.57,105.72,58.37,103,94-2.55,33.45-52.88,35.08-70,81-24.87,66.71,45.6,159.22,66,186,36.05,47.33,58.27,54,60,84,.88,15.19-3.2,41.54-74,108C43.56,638.02,3.37,639.31.64,672.45c-5.48,66.59,150.69,134.87,158,138,68.39,29.29,96.9,19.91,141,58,12.4,10.71,69.63,60.15,59,118-7.89,42.94-49.17,68.73-64,78-26.71,16.69-52.53,22.03-68,24"/>
+  </g>
+  <image id="plume" class="cls-2" width="1296" height="1296" transform="translate(-206.16 151) scale(.6)" xlink:href="../plume.png"/>
+</svg>
