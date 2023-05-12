@@ -10,7 +10,7 @@ il n'y a pas de meta description
 ajouter un meta description
 
 ### Résultat
-
+le meta description à été rajouter, donc le problème est résolue
 
 ## Problème 2
 
@@ -20,7 +20,7 @@ Il manque l'attribut lang au html
 ajouter l'attribut lang au html
 
 ### Résultat
-Étant donner que j'avais déjà lang, je n'ai rien changer
+Étant donner que j'avais déjà lang, je n'ai rien changer, donc le problème n'est pas résolue
 
 ## Problème 3
 
@@ -31,4 +31,5 @@ Résoudre les erreurs dans la console
 
 
 ### Résultat
-Il n'y avait pas d'erreurs dans la console dès le début, donc je n'ai rien changer.
+Il n'y avait pas d'erreurs dans la console dès le début, donc je n'ai rien changer, donc le problème n'est pas résolue
+
