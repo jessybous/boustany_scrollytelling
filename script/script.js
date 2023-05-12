@@ -1,7 +1,7 @@
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(MotionPathPlugin);
-//gsap.registerPlugin(MorphSVGPlugin);
+gsap.registerPlugin(MorphSVGPlugin);
 
 let hauteurTotaleDuDocument = document.body.scrollHeight;
 
@@ -80,8 +80,8 @@ gsap.to("#parallax-bg-3", {
 })
 
 
-/* drawsvg 
-//gsap.registerPlugin(DrawSVGPlugin);
+ drawsvg 
+gsap.registerPlugin(DrawSVGPlugin);
 gsap.from("#path", { drawSVG: "0 0", duration: 5})
 gsap.from("#eyeone", { drawSVG: "0 0", duration: 2})
 gsap.from("#eyetwo", { drawSVG: "0 0", duration: 4})
@@ -92,7 +92,7 @@ gsap.from("#mouthtwo", { drawSVG: "0 0", duration: 7})
 let anim = gsap.to("#starone", {
   morphSVG: "#skull"
 });
-*/
+
 /* Animation Chapitre 2 */
 let chapitredeux = gsap.timeline({
   scrollTrigger: {
